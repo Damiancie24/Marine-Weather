@@ -12,6 +12,17 @@ export class App {
     }
     start(): void {
         this.newCity = new NewCity(this.onNewCity);
+        const stor = new LocStorage();
+        this.cities = stor.getData()?? [];
+        for(let cityData of this.cities) {
+            this.renderCity(cityData);
+        }
+    }
+    renderCity(cityData: CityWeather){
+        const cityWeather = new Weather(cityData);
+        const cities = document.querySelector('#cities');
+        cities.innerHTML += cityWeather.render();
+
     }
     onNewCity = (city: string): void => {
 
@@ -21,12 +32,11 @@ export class App {
         cityPromise.then(cityData => {
             this.cities.push(cityData);
             // pokazać kafelek z pogodą
-            const cityWeather = new Weather(cityData);
-            const cities = document.querySelector('#cities');
-            cities.innerHTML += cityWeather.render();
+            this.renderCity(cityData);
+
             // zapisać nowe miasto w LocStorage
             const stor = new LocStorage();
-            stor.setData(cityData);
+            stor.setData(this.cities);
         });
     };
 }

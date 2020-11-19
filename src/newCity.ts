@@ -16,7 +16,7 @@ export class NewCity {
         });
     }
 
-     private handleNewCity(): void{
+    private handleNewCity(): void {
         const input = document.querySelector<HTMLInputElement>('#cityname');
         this.city = input.value;
         this.newCityHandler(this.city);

@@ -14,7 +14,7 @@ export class App {
         this.newCity = new NewCity(this.onNewCity);
         const stor = new LocStorage();
         this.cities = stor.getData()?? [];
-        for(let cityData of this.cities) {
+        for (let cityData of this.cities) {
             this.renderCity(cityData);
         }
     }

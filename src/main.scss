@@ -16,12 +16,7 @@ body {
   padding: 0;
   margin: 0;
 }
-// body a{
-//   text-decoration: none;
-// }
-// body li{
-//   list-style: none;
-// }
+
 .container{
   width: 1000px;
 }
@@ -45,24 +40,30 @@ body {
 }
 .maindiv{
   display: flex;
+
 }
 .column{
   width: 250px;;
   border: 1px solid black;
   background: lightblue;
-
+ 
   a{
     display: block;
     padding: 10px 0 10px 20px;
     border-bottom: 1px dotted gray;
   }
+  .submenu {
 
+    // color: green;
+    lu li a{
+      display: block;
+    }
+   
+  }
 }
-// .column a{
-//   display: block;
-//   padding: 10px 0 10px 20px;
-//   border-bottom: 1px dotted gray;
-// }
+.mainmenu{
+  position: relative;
+}
 .leftul ul{
   display: none;
 }
@@ -71,9 +72,64 @@ float: right;
 margin-right: 20px;
 transform: rotate(90deg);
 }
-.leftul ul li.tap ul{
+.leftul li:hover .submenu1 ul{
+  background-color: lightblue;
   display: block;
+  margin-top: -40px;
+  position: absolute;
+  margin-left: 250px;
+  width: 250px;
+ 
+  a{
+    padding: 20px;
+    color: beige;
+   
+  }
+  span{
+    float: right;
+    margin-right: 20px;
+    transform: rotate(90deg);
+  }
+  .submenu2 {
+    display: none;
+  }
+  
 }
+// .leftul li:hover .submenusecound ul{
+//   background-color: gray;
+//   display: block;
+//   margin-top: -40px;
+//   position: absolute;
+//   margin-left: 250px;
+//   width: 250px;
+
+//   .submenu2 ul {
+//     display: none;
+//   }
+
+
+// }
+// .submenusecound ul li:hover .submenu2 ul{
+//   display: block;
+//   position: absolute;
+//   margin-left: 250px;
+//    width: 250px;
+
+// }
+// .submenu2 ul li:hover {
+//   display: block;
+//   background-color: aqua;
+// }
+// .submenusecound ul li:hover  {
+//    display: block;
+//   background-color: darkblue;
+//   //  position: absolute;
+//    margin-left: 250px;
+//    width: 250px;
+
+// }
+
+
 .content{
   
   width: 500px;
@@ -97,22 +153,3 @@ transform: rotate(90deg);
     }
   }
 }
-// .content h1{
-//   margin: 20px;
-// }
-// .content label{
-//   margin-left : 20px;
-// }
-// .city {
-//   width: 150px;
-//   border: 1px solid rgb(27, 9, 9);
-//   background: aqua;
-// }
-// #cities{
-//   display: flex;
-//   width: 150px;
-// }
-// .rightmenu a{
-//   display: block;
-//   padding: 10px 0 10px 20px;
-// }

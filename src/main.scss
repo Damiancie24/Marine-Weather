@@ -131,7 +131,7 @@ transform: rotate(90deg);
 
 
 .content{
-  
+  background-color: aquamarine;
   width: 500px;
   height: auto;
   h1{
@@ -145,11 +145,15 @@ transform: rotate(90deg);
     flex-wrap: wrap;
     width: 1000px;
     .city {
-      width: 150px;
+      min-width: 150px;
       border: 1px solid rgb(27, 9, 9);
       background: aqua;
       padding: 10px;
       margin: 20px;
     }
   }
+  h2{
+    padding: 20px;
+  }
 }
+

@@ -1,0 +1,22 @@
+body{
+  // display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: lightblue;
+}
+
+.frameMap{
+  margin: 20px;
+    width: 100%;
+    height: auto;
+    color: aqua;
+    background-color: lightgreen;
+    // background-image: url("/src/img/balticSea.png") ;
+}
+.frameContainer{
+  background-color: aquamarine;
+}
+.frameWether{
+  width: 100%;
+  height: auto
+}

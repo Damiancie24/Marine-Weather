@@ -1,0 +1,21 @@
+body{
+   /* display: flex; */
+  padding: 0;
+  margin: 0;
+}
+
+.frameMap{
+  /* margin: 20px; */
+    width: 100%;
+    border-bottom: 1px solid gray;
+
+    /* /background-image: url("/src/img/balticSea.png") ; */
+}
+.frameContainer{
+  height: 1000px;
+
+} 
+.frameWether{
+  width: 100%;
+  height: auto
+}

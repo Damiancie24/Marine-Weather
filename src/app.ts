@@ -1,8 +1,8 @@
-import { NewCity } from "./newCity";
-import { LocStorage } from "./locStorage";
-import { WeatherSource } from "./weatherSource";
-import { Weather } from "./weather";
-import { CityWeather } from "./cityWeather.model";
+import { NewCity } from './newCity';
+import { LocStorage } from './locStorage';
+import { WeatherSource } from './weatherSource';
+import { Weather } from './weather';
+import { CityWeather } from './cityWeather.model';
 
 export class App {
     newCity: NewCity;
@@ -13,12 +13,12 @@ export class App {
     start(): void {
         this.newCity = new NewCity(this.onNewCity);
         const stor = new LocStorage();
-        this.cities = stor.getData()?? [];
+        this.cities = stor.getData() ?? [];
         for (let cityData of this.cities) {
             this.renderCity(cityData);
         }
     }
-    renderCity(cityData: CityWeather){
+    renderCity(cityData: CityWeather): void {
         const cityWeather = new Weather(cityData);
         const cities = document.querySelector('#cities');
         cities.innerHTML += cityWeather.render();

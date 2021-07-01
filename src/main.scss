@@ -18,11 +18,13 @@ body {
 }
 
 .container{
+  height: auto;
   width: 1000px;
+  color: black;
 }
 
 .topdiv {
-  width: 100%px;
+  width: 100%;
   margin-top: 20px;
   
 }
@@ -33,17 +35,24 @@ body {
   flex-grow: 1;
   border: 1px solid gray;
   background: paleturquoise;
+  color: black;
 }
 .toplineleft{
   display: flex;
   justify-content:space-evenly ;
+  a:hover {
+    background-color: rgb(64, 100, 112);
+    color: beige;
+
+  }
 }
 .maindiv{
   display: flex;
 
 }
 .column{
-  width: 250px;;
+  width: 250px;
+  // height: 100%;
   border: 1px solid black;
   background: lightblue;
  
@@ -54,23 +63,35 @@ body {
   }
   .submenu {
 
-    // color: green;
+    color: black;
     lu li a{
       display: block;
     }
    
   }
+  .submenu:hover {
+    color: beige;
+
+  }
 }
 .mainmenu{
   position: relative;
+ 
 }
+
 .leftul ul{
   display: none;
+  color: beige;
+
 }
 .leftul span{
 float: right;
 margin-right: 20px;
 transform: rotate(90deg);
+}
+.leftul li:hover{
+  color: beige;
+  background-color: rgb(64, 100, 112);
 }
 .leftul li:hover .submenu1 ul{
   background-color: lightblue;
@@ -82,8 +103,12 @@ transform: rotate(90deg);
  
   a{
     padding: 20px;
-    color: beige;
+    color: black;
    
+  }
+  a:hover{
+    color: beige;
+
   }
   span{
     float: right;
@@ -95,45 +120,10 @@ transform: rotate(90deg);
   }
   
 }
-// .leftul li:hover .submenusecound ul{
-//   background-color: gray;
-//   display: block;
-//   margin-top: -40px;
-//   position: absolute;
-//   margin-left: 250px;
-//   width: 250px;
-
-//   .submenu2 ul {
-//     display: none;
-//   }
-
-
-// }
-// .submenusecound ul li:hover .submenu2 ul{
-//   display: block;
-//   position: absolute;
-//   margin-left: 250px;
-//    width: 250px;
-
-// }
-// .submenu2 ul li:hover {
-//   display: block;
-//   background-color: aqua;
-// }
-// .submenusecound ul li:hover  {
-//    display: block;
-//   background-color: darkblue;
-//   //  position: absolute;
-//    margin-left: 250px;
-//    width: 250px;
-
-// }
-
-
 .content{
   // background-color: aquamarine;
   width: 500px;
-  height: 600px;
+  min-height: 600px;
   h1{
     margin: 20px;
   }

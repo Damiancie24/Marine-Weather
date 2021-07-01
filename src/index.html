@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Strona główna</title>
 
-</head>
-  <body>
+</head >
+  <body  >
       <div class="container">
         <div class="topdiv">
             <div class="toplineleft">
@@ -55,8 +54,22 @@
                 </div>
             </div>
               <div class="content">
-                  <iframe name="mainframe" src="/mainframe/mainframe.html" width="100%" height="600px" vspace="0" hspace="0" marginwidth="0" marginheight="0"  scrolling="no"  frameborder="0"></iframe>
+                  <iframe name="mainframe" src="/mainframe/mainframe.html" width="100%" height="100%" vspace="0" hspace="0" marginwidth="0" marginheight="0"  scrolling="no"  frameborder="0"></iframe>
                  
+                <div class="marineAdd">
+                    <!-- <div class="cityAdd"> -->
+                    <label for="lat">Latitude</label>
+                    <input type="text" name="lat" id="lat">
+                    <br><br>
+                    <label for="lng">Longitude</label>
+                    <input type="text" name="lng" id="lng">
+                    <br><br>
+                    <button id="marineAddBtn">Submite</button>
+                    
+                </div>
+                <div class="marineforcast">
+    
+                </div>
                   
               </div>
               <div class="rightmenu column" >
@@ -73,7 +86,8 @@
             
     </div> 
     </div>
-    <script src="index.js"></script>
     
+    <script src="index.js" async></script>
   </body>
+  <!-- <script src="index.js"></script> -->
 </html>

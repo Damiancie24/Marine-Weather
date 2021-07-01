@@ -1,21 +1,28 @@
-body{
-   /* display: flex; */
+body {
+  /* display: flex; */
   padding: 0;
   margin: 0;
 }
 
-.frameMap{
+.frameMap {
   /* margin: 20px; */
-    width: 100%;
-    border-bottom: 1px solid gray;
-
-    /* /background-image: url("/src/img/balticSea.png") ; */
-}
-.frameContainer{
-  height: 1000px;
-
-} 
-.frameWether{
   width: 100%;
-  height: auto
+  border-bottom: 1px solid gray;
+
+  /* /background-image: url("/src/img/balticSea.png") ; */
+}
+.frameContainer {
+  /* display: flex; */
+  /* flex-direction: column; */
+  min-height: auto;
+  /* justify-content: center; */
+}
+.title {
+  display: flex;
+  padding-left: 10px;
+  justify-content: center;
+}
+.frameWether {
+  width: 100%;
+  height: auto;
 }

@@ -1,3 +1,4 @@
+import { NewMarine } from './newMarine';
 import { NewCity } from './newCity';
 import { LocStorage } from './locStorage';
 import { WeatherSource } from './weatherSource';
@@ -7,6 +8,7 @@ import { CityWeather } from './cityWeather.model';
 export class App {
     newCity: NewCity;
     cities: CityWeather[] = [];
+    newMarine: NewMarine;
     constructor() {
         this.start();
     }
@@ -17,6 +19,7 @@ export class App {
         for (let cityData of this.cities) {
             this.renderCity(cityData);
         }
+        this.newMarine = new NewMarine(this.oneMarine);
     }
     renderCity(cityData: CityWeather): void {
         const cityWeather = new Weather(cityData);
@@ -39,4 +42,8 @@ export class App {
             stor.setData(this.cities);
         });
     };
+
+    oneMarine = (lat: string, lng: string): void => {
+        console.log('oneMarine Working!!')
+    }
 }
